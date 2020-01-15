@@ -1,4 +1,4 @@
-<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+    <script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
 
 <script>
 function myFunction(id) {
@@ -113,7 +113,7 @@ function myFunction(id) {
                     <ul>
                       <li>The segmentation results should not be affected by changes in illumination, shadowing, or object texture.</li>
                       <li>Notice how walls separated by corners are labeled as different instances in <strong>Figure 1</strong>. <text style="color:red">Do not</text> group them as a single instance.</li>
-                      <li>Be as <b>accurate</b> as possible when segmenting objects. <strong>Figure 2</strong> (<i>left</i>) shows an example of bad segmentation: The table leg details are not preserved. <text style="color:red">Do not</text> do this, use the polygon tool to obtain a good approximation of the object edge.
+                      <li>Be as <b>accurate</b> as possible when segmenting objects. <strong>Figure 2</strong> (<i>left</i>) shows an example of bad segmentation: The table leg details are not preserved. <text style="color:red">Do not</text> do this, use the polygon tool to obtain a good approximation of the object edge. The following <a href="videos/segmentation_example01.mp4" target="_blank">video</a> depicts an example.
                       </li>
                       <li>Similarly, be as <strong>accurate</strong> as possible when segmenting windows <b>casing</b> and <b>pane</b>. 
                         <text style="color:red">Do not</text> include the actual window as part of the paintable objects. 
@@ -238,7 +238,7 @@ function myFunction(id) {
                     
                     <p><b>Important Notes:</b></p>
                     <ul>
-                      <li> Small non-paintable objects, such as wall sockets, paintings, lights, etc., should not be included in the segmented regions. <strong>Figure 4</strong> shows an example in which wall sockets are excluded from the segmented regions.
+                      <li> Small non-paintable objects, such as wall sockets, paintings, lights, etc., should not be included in the segmented regions. <strong>Figure 4</strong> shows an example in which wall sockets are excluded from the segmented regions. The following <a href="videos/segmentation_example02.mp4" target="_blank">video</a> shows in more detail how to exclude such objects.
                       <li> Be as <strong>accurate</strong> as possible when segmenting balusters: Each column should be outlined separately from the rest. <text style="color:red">Do not</text> segment them along with the space between each column.</p>
                       </li>
   
