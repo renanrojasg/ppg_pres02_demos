@@ -3,13 +3,13 @@
         <h1>Which of these images is fake?</h1>
         <div>
             <p><b>I. Test Description</b></p>
-            <p>You are provided with multiple image pairs, each independent from the rest. Each pair contains a real image and a fake version of it. Take a close look at them and identify which one is real and which one is fake. Your answer should take into consideration the following profiles:</p>
+            <p>You are provided with four unrelated image pairs. Each pair contains a real image and a fake version of it. Take a close look at each pair and identify which one is <b>real</b> and which one is <b>fake</b>. Your answer should take into consideration the following profiles:</p>
             <ul>
                 <li>Is the shadowing consistent with a real picture?</li>
                 <li>Are the objects' edges clearly visible?</li>
                 <li>Does the image contain any noise or distorsions?</li>
             </ul>    
-            <p>Please include any additional comments regarding your choice.</p>
+            <p>Please include any comment you consider important.</p>
         </div>
         <div>
             <p><b>II. Instructions</b></p>
@@ -17,122 +17,86 @@
         </div>
         
         <div class="row">
-            <p><b>III. Images of interest</b></p>
+            <p><b>III. Image Dataset</b></p>
             <p><b>1. Image Pair 1</b></p>
             <table style="width:100%">
-            <tr>
-                <th><b>Image 1</b></th>
-                <th><b>Image 2</b></th>
-            </tr>
-            <tr>
-            <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
-            <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
-            </tr>
-        </div>
-            <tr>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="1a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="1b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            </tr>
-        </table>
+                <tr>
+                    <th><b>Image 1</b></th>
+                    <th><b>Image 2</b></th>
+                </tr>
+                <tr>
+                    <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
+                    <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><div class="options">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="1a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
+                        <crowd-radio-button name="1b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
+                    </crowd-radio-group>
+                    </center></div></td>
+                </tr>
+            </table>
 
             <p><b>2. Image Pair 2</b></p>
             <table style="width:100%">
-            <tr>
-                <th><b>Image 1</b></th>
-                <th><b>Image 2</b></th>
-            </tr>
-            <tr>
-            <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
-            <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
-            </tr>
-        </div>
-            <tr>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="2a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="2b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            </tr>
-        </table>
+                <tr>
+                    <th><b>Image 1</b></th>
+                    <th><b>Image 2</b></th>
+                </tr>
+                <tr>
+                    <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
+                    <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><div class="options">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="2a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
+                        <crowd-radio-button name="2b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
+                    </crowd-radio-group>
+                    </center></div></td>
+                </tr>
+            </table>
 
             <p><b>3. Image Pair 3</b></p>
             <table style="width:100%">
-            <tr>
-                <th><b>Image 1</b></th>
-                <th><b>Image 2</b></th>
-            </tr>
-            <tr>
-            <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
-            <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
-            </tr>
-        </div>
-            <tr>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="3a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="3b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            </tr>
-        </table>
+                <tr>
+                    <th><b>Image 1</b></th>
+                    <th><b>Image 2</b></th>
+                </tr>
+                <tr>
+                    <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
+                    <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><div class="options">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="3a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
+                        <crowd-radio-button name="3b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
+                    </crowd-radio-group>
+                    </center></div></td>
+                </tr>
+            </table>
         
             <p><b>4. Image Pair 4</b></p>
             <table style="width:100%">
-            <tr>
-                <th><b>Image 1</b></th>
-                <th><b>Image 2</b></th>
-            </tr>
-            <tr>
-            <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
-            <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
-            </tr>
-        </div>
-            <tr>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="4a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            <th>
-            <div class="options">
-                <crowd-radio-group>
-                    <crowd-radio-button name="4b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
-                </crowd-radio-group>
-            </div>
-            </th>
-            </tr>
-        </table>
+                <tr>
+                    <th><b>Image 1</b></th>
+                    <th><b>Image 2</b></th>
+                </tr>
+                <tr>
+                    <th><img id="img1" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7_5b92d4c8aaa4275b3c278298.jpg" style="height:480px;margin:2px"></th>
+                    <th><img id="img2" src="images/fake_paired/5b92d5eeaaa4275b3c279bb7.jpg" style="height:480px;margin:2px"></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><center><div class="options">
+                    <crowd-radio-group>
+                        <crowd-radio-button name="4a"> <b>(a)</b> Image 1 is fake, Image 2 is real.</crowd-radio-button>
+                        <crowd-radio-button name="4b"> <b>(b)</b> Image 2 is fake, Image 1 is real.</crowd-radio-button>
+                    </crowd-radio-group>
+                    </center></div></td>
+                </tr>
+            </table>
 
         <p><b><em>Additional Comments: </em></b> </p>
         <p><textarea id="comment_area" name="comment" style="width:90%; height:100px"></textarea></p>

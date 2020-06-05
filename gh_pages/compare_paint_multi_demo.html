@@ -3,7 +3,7 @@
         <h1>Were the same colors used to paint both scenes?</h1>
         <div>
             <p><b>I. Test Description</b></p>
-            <p>You are given four independent image pairs. Take a close look at each pair and determine if <b>(a)</b> <b>The same colors</b> were used to paint both scenes or <b>(b)</b> <b>Different colors</b> were used to paint the scenes. Your answer should take into consideration the following profiles:</p>
+            <p>You are provided with four unrelated image pairs. Take a close look at each pair and determine if <b>(a)</b> <b>the same colors</b> were used to paint both scenes or <b>(b)</b> <b>different colors</b> were used to paint the scenes. Your answer should take into consideration the following profiles:</p>
             <ul>
                 <li>Consider only paintable areas such as walls and ceiling. Do not take into account furniture or small objects in the image.</li>
                 <li>Assume both scenes have the same lighting conditions.</li>
@@ -15,22 +15,23 @@
             <p>Hover your mouse over the image and <b>scroll</b> to zoom in or out. You can also <b>click and drag</b> to explore the image.</p>
         </div>
         <div class="row">
-            <p><b>III. Pairs of interest</b></p>
+            <p><b>III. Image Dataset</b></p>
             <p><b>1. Image pair 1</b></p>
             <img id="img1" src="images/compare_paint/5b92d6e0aaa4275b3c27aa1b.jpg" style="height:480px;margin:2px">
             <img id="img2" src="images/compare_paint/5b92e8b5aaa4275b3c2828fc_5b92d6e0aaa4275b3c27aa1b.jpg" style="height:480px;margin:2px">
         </div>
-        <div class="options">
+        <div>
             <b>Answer for Image pair 1</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="01_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="01_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="01_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="01_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
+        </div>
+        
         <div class="row">
             <p><b>2. Image pair 2</b></p>
             <img id="img1" src="images/compare_paint/5b92d6e0aaa4275b3c27aa1b.jpg" style="height:480px;margin:2px">
@@ -38,15 +39,16 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 2</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="02_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="02_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="02_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="02_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
+        </div>
+        
         <div class="row">
             <p><b>3. Image pair 3</b></p>
             <img id="img1" src="images/compare_paint/5b92d6e0aaa4275b3c27aa1b.jpg" style="height:480px;margin:2px">
@@ -54,15 +56,16 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 3</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="03_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="03_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="03_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="03_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
+        </div>
+        
         <div class="row">
             <p><b>4. Image pair 4</b></p>
             <img id="img1" src="images/compare_paint/5b92d6e0aaa4275b3c27aa1b.jpg" style="height:480px;margin:2px">
@@ -70,15 +73,18 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 4</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="04_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="04_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="04_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="04_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
+        </div>
+        
+        <p><b><em>Additional Comments: </em></b> </p>
+        <p><textarea id="comment_area" name="comment" style="width:90%; height:100px"></textarea></p>
     </crowd-form>
 </body>
 

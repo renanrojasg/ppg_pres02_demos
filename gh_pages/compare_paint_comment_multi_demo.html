@@ -3,13 +3,13 @@
         <h1>Were the same colors used to paint both scenes?</h1>
         <div>
             <p><b>I. Test Description</b></p>
-            <p>You are provided with four independent image pairs. Take a close look at each pair and determine if <b>(a)</b> <b>The same colors</b> were used to paint both scenes or <b>(b)</b> <b>Different colors</b> were used to paint the scenes. Your answer should take into consideration the following profiles:</p>
+            <p>You are provided with four unrelated image pairs. Take a close look at each pair and determine if either <b>(a)</b> <b>the same colors</b> were used to paint both scenes or <b>(b)</b> <b>different colors</b> were used to paint the scenes. Your answer should consider the following profiles:</p>
             <ul>
-                <li>Consider only paintable areas such as walls and ceiling. Do not take into account furniture or small objects in the image.</li>
+                <li>Consider only paintable areas such as walls and ceiling. Do not take into account furniture or small objects in the scene.</li>
                 <li>Assume both scenes have the same lighting conditions.</li>
                 <li>Dismiss any shadowing effects in the scene.</li>
             </ul>
-            <p>What aspects of each image did you take into account for your final decision? Provide specific details regarding your choice, include any additional comment you consider relevant. </p>
+            <p>What aspects of each image did you take into account for your final answer? You <b>must</b> provide specific details regarding your choice for each pair.</p>
         </div>
         <div>
             <p><b>II. Instructions</b></p>
@@ -23,17 +23,16 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 1</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="01_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="01_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="01_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="01_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
         <p><b><em>Clearly justify your answer: </em></b> </p>
-        <p><textarea id="comment_area" name="comment" style="width:90%; height:100px"></textarea></p>
+        <p><textarea id="comment_area01" name="comment01" style="width:90%; height:100px"></textarea></p>
         <div class="row">
             <p><b>2. Image pair 2</b></p>
             <img id="img1" src="images/compare_paint/5b92d4cbaaa4275b3c278314_5b92d4c8aaa4275b3c278298.jpg" style="height:420px;margin:2px">
@@ -41,17 +40,16 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 2</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="02_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="02_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="02_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="02_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
         <p><b><em>Clearly justify your answer: </em></b> </p>
-        <p><textarea id="comment_area" name="comment" style="width:90%; height:100px"></textarea></p>
+        <p><textarea id="comment_area02" name="comment02" style="width:90%; height:100px"></textarea></p>
         <div class="row">
             <p><b>3. Image pair 3</b></p>
             <img id="img1" src="images/compare_paint/5b92d4cbaaa4275b3c278314_5b92d4c8aaa4275b3c278298.jpg" style="height:420px;margin:2px">
@@ -59,17 +57,16 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 3</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="03_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="03_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="03_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="03_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
         <p><b><em>Clearly justify your answer: </em></b> </p>
-        <p><textarea id="comment_area" name="comment" style="width:90%; height:100px"></textarea></p>
+        <p><textarea id="comment_area03" name="comment03" style="width:90%; height:100px"></textarea></p>
         <div class="row">
             <p><b>4. Image pair 4</b></p>
             <img id="img1" src="images/compare_paint/5b92d4cbaaa4275b3c278314_5b92d4c8aaa4275b3c278298.jpg" style="height:420px;margin:2px">
@@ -77,17 +74,16 @@
         </div>
         <div class="options">
             <b>Answer for Image pair 4</b>
-        </div><div>
+        </div>
+        <div class="options">
             <crowd-radio-group>
-                <div>
-                <crowd-radio-button name="04_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
-                </div><div>
-                <crowd-radio-button name="04_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
-                </div>
+            <crowd-radio-button name="04_1"> <b>(a)</b> The same colors were used to paint both scenes.</crowd-radio-button>
+            <br>
+            <crowd-radio-button name="04_2"> <b>(b)</b> Different colors were used to paint the scenes.</crowd-radio-button>
             </crowd-radio-group>
         </div>
         <p><b><em>Clearly justify your answer: </em></b> </p>
-        <p><textarea id="comment_area" name="comment" style="width:90%; height:100px"></textarea></p>
+        <p><textarea id="comment_area04" name="comment04" style="width:90%; height:100px"></textarea></p>
     </crowd-form>
 </body>
 
