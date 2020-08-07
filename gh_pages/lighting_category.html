@@ -1,0 +1,543 @@
+<body onload="load();">
+    <crowd-form answer-format="flatten-objects" style="margin:5px">
+        <h1>What kind of light source is used in this scene?</h1>
+        <div>
+            <p><b>I. Test Description</b></p>
+            <p>You are provided with four unrelated images. Take a close look at each one to determine its type of lighting. You must choose from the following categories:</p>
+            <table>
+            <td>
+                <img id="img1" src="images/lighting_category/temperature_chart_short_crop.png" style="height:420px;margin:2px">
+            </td>
+            <td>&nbsp;</td>
+            <td>
+                <div class="options">
+                </div>
+                <ol>
+                    <li><b>Incandescent Light.</b></li>
+                    <li><b>Daylight Dusk.</b></li>
+                    <li><b>Neutral White LED.</b></li>
+                    <li><b>Cool White Fluorescent.</b></li>
+                    <li><b>Daylight Morning.</b></li>
+                    <li><b>Daylight Noon.</b></li>
+                </ol>            
+            </td>
+            </table>
+            <p>The lighting alternatives are shown next to each scene for an easier comparison. You should also consider the following points:</p>
+            <ul>
+                <li>In case there are multiple illumination sources, consider only the strongest one.</li>
+                <li>Use as much contextual information as possible to distinguish between the color of objects and the illumination itself.</li>
+                <li>Dismiss any shadowing effects in the scene.</li>
+                <li>You must pick one of the alternatives.</li>
+            </ul>
+            <p>What aspects of each image did you take into account for your final answer? You <b>must</b> provide specific details regarding your choice for each image in the 'Additional Comments' box.</p>
+        </div>
+        <div>
+            <p><b>II. Instructions</b></p>
+            <p>Hover your mouse over the image and <b>scroll</b> to zoom in or out. You can also <b>click and drag</b> to explore the image.</p>
+        </div>
+        <div class="row">
+            <p><b>III. Images of interest</b></p>
+            <table>
+            <td>
+                <p><b>Image 1</b></p>
+                <img id="img1" src="images/lighting_category/5b92d4c8aaa4275b3c278298.jpg" style="height:420px;margin:2px">
+                <img id="img1" src="images/lighting_category/temperature_chart_short_crop.png" style="height:420px;margin:2px">
+            </td>
+            <td>&nbsp;</td>
+            <td>
+                <div class="options">
+                <b>Illumination Category for Image 1</b>
+                </div>
+                <div class="options">
+                    <crowd-radio-group>
+                    <crowd-radio-button name="01_incandescent">
+                    <b>(a)</b> Incandescent Light.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="01_dusk">
+                    <b>(b)</b> Daylight Dusk.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="01_led">
+                    <b>(c)</b> Neutral White LED.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="01_fluorescent">
+                    <b>(d)</b> Cool White Fluorescent.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="01_morning">
+                    <b>(e)</b> Daylight Morning.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="01_noon">
+                    <b>(f)</b> Daylight Noon.</crowd-radio-button>
+                    </crowd-radio-group>
+                </div>
+            </td>
+            </table>
+        </div>
+        <p><b><em>Additional Comments: </em></b> </p>
+        <p><textarea id="comment_area01" name="comment01" style="width:90%; height:100px"></textarea></p>
+        <div class="row">
+            <table>
+            <td>
+                <p><b>Image 2</b></p>
+                <img id="img1" src="images/lighting_category/5b92d463aaa4275b3c277359.jpg" style="height:420px;margin:2px">
+                <img id="img1" src="images/lighting_category/temperature_chart_short_crop.png" style="height:420px;margin:2px">
+            </td>
+            <td>&nbsp;</td>
+            <td>
+                <div class="options">
+                <b>Illumination Category for Image 2</b>
+                </div>
+                <div class="options">
+                    <crowd-radio-group>
+                    <crowd-radio-button name="02_incandescent">
+                    <b>(a)</b> Incandescent Light.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="02_dusk">
+                    <b>(b)</b> Daylight Dusk.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="02_led">
+                    <b>(c)</b> Neutral White LED.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="02_fluorescent">
+                    <b>(d)</b> Cool White Fluorescent.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="02_morning">
+                    <b>(e)</b> Daylight Morning.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="02_noon">
+                    <b>(f)</b> Daylight Noon.</crowd-radio-button>
+                    </crowd-radio-group>
+                </div>
+            </td>
+            </table>
+        </div>
+        <p><b><em>Additional Comments: </em></b> </p>
+        <p><textarea id="comment_area02" name="comment02" style="width:90%; height:100px"></textarea></p>
+        <div class="row">
+            <table>
+            <td>
+                <p><b>Image 3</b></p>
+                <img id="img1" src="images/lighting_category/5b92d6e0aaa4275b3c27aa1b.jpg" style="height:420px;margin:2px">
+                <img id="img1" src="images/lighting_category/temperature_chart_short_crop.png" style="height:420px;margin:2px">
+            </td>
+            <td>&nbsp;</td>
+            <td>
+                <div class="options">
+                <b>Illumination Category for Image 3</b>
+                </div>
+                <div class="options">
+                    <crowd-radio-group>
+                    <crowd-radio-button name="03_incandescent">
+                    <b>(a)</b> Incandescent Light.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="03_dusk">
+                    <b>(b)</b> Daylight Dusk.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="03_led">
+                    <b>(c)</b> Neutral White LED.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="03_fluorescent">
+                    <b>(d)</b> Cool White Fluorescent.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="03_morning">
+                    <b>(e)</b> Daylight Morning.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="03_noon">
+                    <b>(f)</b> Daylight Noon.</crowd-radio-button>
+                    </crowd-radio-group>
+                </div>
+            </td>
+            </table>
+        </div>
+        <p><b><em>Additional Comments: </em></b> </p>
+        <p><textarea id="comment_area03" name="comment03" style="width:90%; height:100px"></textarea></p>
+        <div class="row">
+            <table>
+            <td>
+                <p><b>Image 4</b></p>
+                <img id="img1" src="images/lighting_category/5b92f18eaaa4275b3c28505a.jpg" style="height:420px;margin:2px">
+                <img id="img1" src="images/lighting_category/temperature_chart_short_crop.png" style="height:420px;margin:2px">
+            </td>
+            <td>&nbsp;</td>
+            <td>
+                <div class="options">
+                <b>Illumination Category for Image 4</b>
+                </div>
+                <div class="options">
+                    <crowd-radio-group>
+                    <crowd-radio-button name="04_incandescent">
+                    <b>(a)</b> Incandescent Light.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="04_dusk">
+                    <b>(b)</b> Daylight Dusk.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="04_led">
+                    <b>(c)</b> Neutral White LED.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="04_fluorescent">
+                    <b>(d)</b> Cool White Fluorescent.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="04_morning">
+                    <b>(e)</b> Daylight Morning.</crowd-radio-button>
+                    <br>
+                    <crowd-radio-button name="04_noon">
+                    <b>(f)</b> Daylight Noon.</crowd-radio-button>
+                    </crowd-radio-group>
+                </div>
+            </td>
+            </table>
+        </div>
+        <p><b><em>Additional Comments: </em></b> </p>
+        <p><textarea id="comment_area04" name="comment04" style="width:90%; height:100px"></textarea></p>
+    </crowd-form>
+</body>
+
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<script>
+/*!
+	Wheelzoom 1.1.1
+	license: MIT
+	https://luperi.github.io/wheelzoom/
+*/
+
+// create CustomEvent to override window.Event in unsupported browsers
+(function () {
+	function CustomEvent ( event, params ) {
+		params = params || { bubbles: false, cancelable: false, detail: undefined };
+		var evt = document.createEvent( 'CustomEvent' );
+		evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+		return evt;
+	}
+
+	CustomEvent.prototype = window.Event.prototype;
+	window.CustomEvent = CustomEvent;
+})();
+
+// create cross browser triggerEvent function
+window.triggerEvent = function(target, eventName, params) {
+	if (params) {
+		var e = new CustomEvent(eventName, {
+			'detail': params
+		});
+	} else {
+		try {
+			var e = new Event(eventName);
+		} catch (err) {
+			var e = new CustomEvent(eventName);
+		}
+	}
+
+	return target.dispatchEvent(e, params);
+};
+
+window.wheelzoom = (function(){
+	var defaults = {
+		zoom: 0.10,
+		maxZoom: -1
+	};
+
+	var canvas = document.createElement('canvas');
+
+	var main = function(img, options){
+		if (!img || !img.nodeName || img.nodeName !== 'IMG') { return; }
+
+		var settings = {};
+		var width;
+		var height;
+		var bgWidth;
+		var bgHeight;
+		var bgPosX;
+		var bgPosY;
+		var previousEvent;
+		var cachedDataUrl;
+		var initBgPosX;
+		var initBgPosY;
+
+		function setSrcToBackground(img) {
+			img.style.backgroundImage = 'url("'+img.src+'")';
+			img.style.backgroundRepeat = 'no-repeat';
+			canvas.width = img.naturalWidth;
+			canvas.height = img.naturalHeight;
+			cachedDataUrl = canvas.toDataURL();
+			img.src = cachedDataUrl;
+		}
+
+		function updateBgStyle() {
+			if (bgPosX > 0) {
+				bgPosX = 0;
+			} else if (bgPosX < width - bgWidth) {
+				bgPosX = width - bgWidth;
+			}
+
+			if (bgPosY > 0) {
+				bgPosY = 0;
+			} else if (bgPosY < height - bgHeight) {
+				bgPosY = height - bgHeight;
+			}
+
+			img.style.backgroundSize = bgWidth+'px '+bgHeight+'px';
+			img.style.backgroundPosition = bgPosX+'px '+bgPosY+'px';
+		}
+
+		function reset() {
+			bgWidth = width;
+			bgHeight = height;
+			bgPosX = bgPosY = 0;
+			updateBgStyle();
+		}
+
+		img.doZoomIn = function(propagate) {
+			if (typeof propagate === 'undefined') {
+				propagate = false;
+			}
+
+			doZoom(-100, propagate);
+		}
+
+		img.doZoomOut = function(propagate) {
+			if (typeof propagate === 'undefined') {
+				propagate = false;
+			}
+
+			doZoom(100, propagate);
+		}
+
+		function doZoom (deltaY, propagate) {
+			if (typeof propagate === 'undefined') {
+				propagate = false;
+			}
+
+			// zoom always at the center of the image
+			var offsetX = img.width/2;
+			var offsetY = img.height/2;
+
+			// Record the offset between the bg edge and the center of the image:
+			var bgCenterX = offsetX - bgPosX;
+			var bgCenterY = offsetY - bgPosY;
+			// Use the previous offset to get the percent offset between the bg edge and the center of the image:
+			var bgRatioX = bgCenterX/bgWidth;
+			var bgRatioY = bgCenterY/bgHeight;
+
+			// Update the bg size:
+			if (deltaY < 0) {
+				if (settings.maxZoom == -1 || (bgWidth + bgWidth*settings.zoom) / width <= settings.maxZoom) {
+					bgWidth += bgWidth*settings.zoom;
+					bgHeight += bgHeight*settings.zoom;
+				}
+			} else {
+				bgWidth -= bgWidth*settings.zoom;
+				bgHeight -= bgHeight*settings.zoom;
+			}
+
+			// Take the percent offset and apply it to the new size:
+			bgPosX = offsetX - (bgWidth * bgRatioX);
+			bgPosY = offsetY - (bgHeight * bgRatioY);
+
+			if (propagate) {
+				if (deltaY < 0) {
+					// setTimeout to handle lot of events fired
+					setTimeout(function() {
+						triggerEvent(img, 'wheelzoom.in', {
+							zoom: bgWidth/width,
+							bgPosX: bgPosX,
+							bgPosY: bgPosY
+						});
+					}, 10);
+				} else {
+					// setTimeout to handle lot of events fired
+					setTimeout(function() {
+						triggerEvent(img, 'wheelzoom.out', {
+							zoom: bgWidth/width,
+							bgPosX: bgPosX,
+							bgPosY: bgPosY
+						});
+					}, 10);
+				}
+			}
+
+			// Prevent zooming out beyond the starting size
+			if (bgWidth <= width || bgHeight <= height) {
+				triggerEvent(img, 'wheelzoom.reset');
+			} else {
+				updateBgStyle();
+			}
+		}
+
+		function onwheel(e) {
+			var deltaY = 0;
+
+			e.preventDefault();
+
+			if (e.deltaY) { // FireFox 17+ (IE9+, Chrome 31+?)
+				deltaY = e.deltaY;
+			} else if (e.wheelDelta) {
+				deltaY = -e.wheelDelta;
+			}
+
+			if (deltaY < 0) {
+				img.doZoomIn(true);
+			} else {
+				img.doZoomOut(true);
+			}
+		}
+
+		img.doDrag = function (x, y) {
+			bgPosX = x;
+			bgPosY = y;
+
+			updateBgStyle();
+		}
+
+		function drag(e) {
+			e.preventDefault();
+			var xShift = e.pageX - previousEvent.pageX;
+			var yShift = e.pageY - previousEvent.pageY;
+			var x = bgPosX + xShift;
+			var y = bgPosY + yShift;
+
+			img.doDrag(x, y);
+
+			triggerEvent(img, 'wheelzoom.drag', {
+				bgPosX: bgPosX,
+				bgPosY: bgPosY,
+				xShift: xShift,
+				yShift: yShift
+			});
+
+			previousEvent = e;
+			updateBgStyle();
+		}
+
+		function removeDrag() {
+			triggerEvent(img, 'wheelzoom.dragend', {
+				x: bgPosX - initBgPosX,
+				y: bgPosY - initBgPosY
+			});
+
+			document.removeEventListener('mouseup', removeDrag);
+			document.removeEventListener('mousemove', drag);
+		}
+
+		// Make the background draggable
+		function draggable(e) {
+			triggerEvent(img, 'wheelzoom.dragstart');
+
+			e.preventDefault();
+			previousEvent = e;
+			document.addEventListener('mousemove', drag);
+			document.addEventListener('mouseup', removeDrag);
+		}
+
+		function load() {
+			if (img.src === cachedDataUrl) return;
+
+			var computedStyle = window.getComputedStyle(img, null);
+
+			width = parseInt(computedStyle.width, 10);
+			height = parseInt(computedStyle.height, 10);
+			bgWidth = width;
+			bgHeight = height;
+			bgPosX = bgPosY = initBgPosX = initBgPosY = 0;
+
+			setSrcToBackground(img);
+
+			img.style.backgroundSize =  width+'px '+height+'px';
+			img.style.backgroundPosition = '0 0';
+
+			img.addEventListener('wheelzoom.reset', reset);
+			img.addEventListener('wheelzoom.destroy', destroy);
+			img.addEventListener('wheel', onwheel);
+			img.addEventListener('mousedown', draggable);
+		}
+
+		var destroy = function (originalProperties) {
+			img.removeEventListener('wheelzoom.destroy', destroy);
+			img.removeEventListener('wheelzoom.reset', reset);
+			img.removeEventListener('mouseup', removeDrag);
+			img.removeEventListener('mousemove', drag);
+			img.removeEventListener('mousedown', draggable);
+			img.removeEventListener('wheel', onwheel);
+
+			img.style.backgroundImage = originalProperties.backgroundImage;
+			img.style.backgroundRepeat = originalProperties.backgroundRepeat;
+			img.src = originalProperties.src;
+		}.bind(null, {
+			backgroundImage: img.style.backgroundImage,
+			backgroundRepeat: img.style.backgroundRepeat,
+			src: img.src
+		});
+
+		options = options || {};
+
+		Object.keys(defaults).forEach(function(key){
+			settings[key] = typeof options[key] !== 'undefined' ? options[key] : defaults[key];
+		});
+
+		var t = setInterval(function(){
+			if (img.complete) {
+				load();
+			}
+
+			clearInterval(t);
+		}, 100);
+	};
+
+	// Do nothing in IE8
+	if (typeof window.getComputedStyle !== 'function') {
+		return function(elements) {
+			return elements;
+		};
+	} else {
+		return function(elements, options) {
+			if (elements && elements.length) {
+				for (var i=0;i<elements.length;i++) {
+					main(elements[i], options);
+				}
+			} else if (elements && elements.nodeName) {
+				main(elements, options);
+			}
+
+			return elements;
+		};
+	}
+}());
+</script>
+<script>
+	function load() {
+		var zoomIn  = -100;
+		var zoomOut = 100;
+		
+		images = wheelzoom(document.querySelectorAll('img'), {zoom: 0.1, maxZoom: 10});
+		
+		images[0].addEventListener('wheelzoom.in', function(e) {
+			document.getElementById('label1').innerHTML = '"wheelzoom.in"';
+		});
+		images[0].addEventListener('wheelzoom.out', function(e) {
+			document.getElementById('label1').innerHTML = '"wheelzoom.out"';
+		});
+		images[0].addEventListener('wheelzoom.dragstart', function(e) {
+			document.getElementById('label1').innerHTML = '"wheelzoom.dragstart"';
+		});
+		images[0].addEventListener('wheelzoom.drag', function(e) {
+			document.getElementById('label1').innerHTML = '"wheelzoom.drag"';
+		});
+		images[0].addEventListener('wheelzoom.dragend', function(e) {
+			document.getElementById('label1').innerHTML = '"wheelzoom.dragend"';
+		});
+		
+		images[1].addEventListener('wheelzoom.in', function(e) {
+			document.getElementById('label2').innerHTML = '"wheelzoom.in"';
+		});
+		images[1].addEventListener('wheelzoom.out', function(e) {
+			document.getElementById('label2').innerHTML = '"wheelzoom.out"';
+		});
+		images[1].addEventListener('wheelzoom.dragstart', function(e) {
+			document.getElementById('label2').innerHTML = '"wheelzoom.dragstart"';
+		});
+		images[1].addEventListener('wheelzoom.drag', function(e) {
+			document.getElementById('label2').innerHTML = '"wheelzoom.drag"';
+		});
+		images[1].addEventListener('wheelzoom.dragend', function(e) {
+			document.getElementById('label2').innerHTML = '"wheelzoom.dragend"';
+		});
+	}
+</script>
